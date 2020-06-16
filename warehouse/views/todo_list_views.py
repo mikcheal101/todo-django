@@ -2,17 +2,22 @@ from rest_framework.decorators import api_view
 
 
 @api_view(['GET'])
-def get_todo_list(request):
+def get_todo_list(request, id):
     pass
 
 
 @api_view(['POST'])
-def update_todo_list(request):
+def create_todo_list(request):
     pass
 
 
 @api_view(['POST'])
-def delete_todo_list(request):
+def update_todo_list(request, id):
+    pass
+
+
+@api_view(['GET'])
+def delete_todo_list(request, id):
     pass
 
 
