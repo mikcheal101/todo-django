@@ -37,6 +37,8 @@ class TodoListItem(models.Model):
     def __str__(self):
         return self.name
 
+    todo_list = models.ForeignKey(
+        to=TodoList, related_name='todo_list_item', on_delete=models.CASCADE)
     priority = models.CharField(
         max_length=200, choices=PRIORITIES, default=HIGH)
     name = models.CharField(max_length=200)
