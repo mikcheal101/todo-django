@@ -9,6 +9,9 @@ __pycache__/
 # vscode
 *.vscode
 
+# migration files
+*/migrations
+
 # Distribution / packaging
 .Python
 build/
