@@ -6,9 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: check python version
-        run: python3 -v
+        run: |
+          python3 -v
+          pip -v
       - name: install requirements.txt
-        run: pip3 install requirements.txt
+        run: pip install requirements.txt
       - name: make migrations
         run: python3 manage.py makemigrations
       - name: migrate
