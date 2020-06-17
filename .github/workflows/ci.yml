@@ -5,13 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: check python version
-        run: |
-          sudo apt update
-          sudo apt install python3-pip
-          pip3 -v
       - name: install requirements.txt
-        run: pip install requirements.txt
+        run: pip3 install ./requirements.txt
       - name: make migrations
         run: python3 manage.py makemigrations
       - name: migrate
