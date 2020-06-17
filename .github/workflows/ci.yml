@@ -6,4 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: install requirements.txt
-        run: ls -al
+        run: pip3 install -r requirements.txt
+      - name: make migrations
+        run: python3 manage.py makemigrations
