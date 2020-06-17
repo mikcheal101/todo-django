@@ -6,10 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: install requirements.txt
-        run: pip3 install ./requirements.txt
-      - name: make migrations
-        run: python3 manage.py makemigrations
-      - name: migrate
-        run: python3 manage.py migrate
-      - name: test application
-        run: pytest
+        run: ls -al
