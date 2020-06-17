@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: check python version
-        run: python -v
+        run: python3 -v
       - name: display directory listing
         run: ls -al
